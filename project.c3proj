@@ -17,8 +17,10 @@
 	"uniqueId": "an081nmxghn",
 	"objectTypes": {
 		"items": [
-			"Sprite",
-			"Sprite2"
+			"cable3",
+			"1Pantalla",
+			"cable1",
+			"cable2"
 		],
 		"subfolders": []
 	},

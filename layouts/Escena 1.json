@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "1Pantalla",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -19,10 +19,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 99,
-						"y": 127,
-						"width": 250,
-						"height": 250,
+						"x": 224,
+						"y": 211,
+						"width": 367,
+						"height": 398,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -36,7 +36,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "cable3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -48,17 +48,75 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 276,
-						"y": 124,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 632,
+						"y": 410,
+						"width": 20,
+						"height": 71,
+						"originX": 3.45,
+						"originY": 1.5633802816901408,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cable1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 534,
+						"y": 409,
+						"width": 20,
+						"height": 71,
+						"originX": 3.45,
+						"originY": 1.5633802816901408,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cable2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 584,
+						"y": 409,
+						"width": 20,
+						"height": 71,
+						"originX": 3.45,
+						"originY": 1.5633802816901408,
+						"color": [
+							1,
+							1,
+							1,
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
