@@ -36,35 +36,6 @@
 					}
 				},
 				{
-					"type": "cable3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 632,
-						"y": 410,
-						"width": 20,
-						"height": 71,
-						"originX": 3.45,
-						"originY": 1.5633802816901408,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "cable1",
 					"properties": {
 						"initially-visible": true,
@@ -75,14 +46,57 @@
 					},
 					"uid": 4,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 534,
-						"y": 409,
+						"x": 531,
+						"y": 417,
 						"width": 20,
 						"height": 71,
-						"originX": 3.45,
-						"originY": 1.5633802816901408,
+						"originX": 0.5,
+						"originY": 0.23943661971830985,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "colisioncable1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 135,
+						"y": 305,
+						"width": 7,
+						"height": 6,
+						"originX": 0.42857142857142855,
+						"originY": 0.8333333333333334,
 						"color": [
 							1,
 							1,
@@ -102,16 +116,131 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 5,
+					"uid": 6,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 584,
-						"y": 409,
+						"x": 588.8772745754632,
+						"y": 413.81962512885434,
 						"width": 20,
 						"height": 71,
-						"originX": 3.45,
-						"originY": 1.5633802816901408,
+						"originX": 0.5,
+						"originY": 0.23943661971830985,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cable3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 639.7118953728765,
+						"y": 420.0024243217538,
+						"width": 20,
+						"height": 71,
+						"originX": 0.5,
+						"originY": 0.23943661971830985,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "colisioncable2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 158.84506821481358,
+						"y": 309.4028709691737,
+						"width": 7,
+						"height": 6,
+						"originX": 0.42857142857142855,
+						"originY": 0.8333333333333334,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "colisioncable3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 180.82818332995987,
+						"y": 310.7766920920226,
+						"width": 7,
+						"height": 6,
+						"originX": 0.42857142857142855,
+						"originY": 0.8333333333333334,
 						"color": [
 							1,
 							1,

@@ -1,36 +1,42 @@
 {
-	"name": "cable3",
+	"name": "Sprite",
 	"plugin-id": "Sprite",
-	"sid": 887195859975759,
+	"sid": 250361140642511,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "DragnDrop",
-			"name": "ArrastrarYSoltar",
-			"sid": 651006290891539
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 20,
-						"height": 71,
-						"originX": 0.5,
-						"originY": 0.23943661971830985,
+						"width": 250,
+						"height": 70,
+						"originX": -0.776,
+						"originY": 1.6142857142857143,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2742676,
+						"imageSpriteId": 1849081,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.996,
+								0,
+								0.996,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 217220918130168,
+				"sid": 170928851977167,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -12,15 +12,26 @@
 			"name": "Sprite",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "an081nmxghn",
 	"objectTypes": {
 		"items": [
-			"cable3",
 			"1Pantalla",
 			"cable1",
-			"cable2"
+			"colisioncable1",
+			"Sprite",
+			"cable2",
+			"cable3",
+			"colisioncable2",
+			"colisioncable3"
 		],
 		"subfolders": []
 	},

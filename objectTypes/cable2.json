@@ -1,10 +1,16 @@
 {
 	"name": "cable2",
 	"plugin-id": "Sprite",
-	"sid": 835641543984915,
+	"sid": 433310566726448,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 274882410962355
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,18 +19,18 @@
 					{
 						"width": 20,
 						"height": 71,
-						"originX": 3.45,
-						"originY": 1.5633802816901408,
+						"originX": 0.5,
+						"originY": 0.23943661971830985,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4064907,
+						"imageSpriteId": 8835077,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 669998059029426,
+				"sid": 783242895589310,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

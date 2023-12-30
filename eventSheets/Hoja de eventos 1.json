@@ -1,5 +1,124 @@
 {
 	"name": "Hoja de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cable1",
+					"sid": 969288812245235,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 293775560753935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable1",
+					"sid": 971148713230693,
+					"parameters": {
+						"object": "colisioncable1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cable1",
+					"sid": 806877247535043,
+					"parameters": {
+						"object": "colisioncable1",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable1",
+					"sid": 920997464863654,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 681661549093991
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable2",
+					"sid": 926506889529270,
+					"parameters": {
+						"object": "colisioncable2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cable2",
+					"sid": 273038387226462,
+					"parameters": {
+						"object": "colisioncable2",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable2",
+					"sid": 898852406800614,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 705884852998770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable3",
+					"sid": 235193156023495,
+					"parameters": {
+						"object": "colisioncable3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cable3",
+					"sid": 615893669786595,
+					"parameters": {
+						"object": "colisioncable3",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable3",
+					"sid": 780794247237771,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 399348457856530
+		}
+	],
 	"sid": 203021414522544
 }
