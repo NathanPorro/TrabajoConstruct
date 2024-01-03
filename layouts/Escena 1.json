@@ -82,14 +82,7 @@
 					},
 					"uid": 3,
 					"instanceVariables": {},
-					"behaviors": {
-						"ArrastrarYSoltar": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 135,
 						"y": 305,
@@ -190,14 +183,7 @@
 					},
 					"uid": 7,
 					"instanceVariables": {},
-					"behaviors": {
-						"ArrastrarYSoltar": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 158.84506821481358,
 						"y": 309.4028709691737,
@@ -226,14 +212,7 @@
 					},
 					"uid": 8,
 					"instanceVariables": {},
-					"behaviors": {
-						"ArrastrarYSoltar": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 180.82818332995987,
 						"y": 310.7766920920226,
