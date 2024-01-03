@@ -3,19 +3,22 @@
 	"events": [
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [
+			"conditions": [
 				{
-					"id": "set-enabled",
-					"objectClass": "cable1",
-					"sid": 969288812245235,
-					"behaviorType": "ArrastrarYSoltar",
-					"parameters": {
-						"state": "enabled"
-					}
+					"id": "on-drag-start",
+					"objectClass": "start",
+					"sid": 384851707329157,
+					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
-			"sid": 293775560753935
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "start",
+					"sid": 659377830755157
+				}
+			],
+			"sid": 805735898126425
 		},
 		{
 			"eventType": "block",
@@ -118,6 +121,22 @@
 				}
 			],
 			"sid": 399348457856530
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cable1",
+					"sid": 635221751249506,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 498422527137330
 		}
 	],
 	"sid": 203021414522544
