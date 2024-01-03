@@ -14,6 +14,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Arrastrar y soltar",
@@ -27,11 +34,11 @@
 			"1Pantalla",
 			"cable1",
 			"colisioncable1",
-			"Sprite",
 			"cable2",
 			"cable3",
 			"colisioncable2",
-			"colisioncable3"
+			"colisioncable3",
+			"start"
 		],
 		"subfolders": []
 	},
