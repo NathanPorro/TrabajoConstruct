@@ -38,15 +38,11 @@
 			"cable3",
 			"colisioncable2",
 			"colisioncable3",
-<<<<<<< Updated upstream
-			"start"
-=======
 			"Sprite2",
 			"Texto",
 			"ubicacion_1",
 			"ubicacion_2",
 			"ubicacion_3"
->>>>>>> Stashed changes
 		],
 		"subfolders": []
 	},
