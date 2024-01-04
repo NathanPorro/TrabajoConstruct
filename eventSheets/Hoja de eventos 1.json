@@ -89,6 +89,14 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 212298327801289,
+					"parameters": {
+						"value": "1+BarraDeProgreso.Progress"
+					}
 				}
 			],
 			"sid": 681661549093991
@@ -122,6 +130,14 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 663416589125150,
+					"parameters": {
+						"value": "1+BarraDeProgreso.Progress"
 					}
 				}
 			],
@@ -157,9 +173,91 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 144322256713822,
+					"parameters": {
+						"value": "1+BarraDeProgreso.Progress"
+					}
 				}
 			],
 			"sid": 399348457856530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "BarraDeProgreso",
+					"sid": 512979996034123
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 833191536561967,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso",
+					"sid": 994642780419375,
+					"parameters": {
+						"maximum": "3"
+					}
+				}
+			],
+			"sid": 681566685501067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 365634802792860,
+					"parameters": {
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "1Pantalla",
+					"sid": 129239801072480
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable1",
+					"sid": 916098346954513
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable2",
+					"sid": 383977543764654
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable3",
+					"sid": 524277851316830
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 973073399375575,
+					"parameters": {
+						"value": "0"
+					}
+				}
+			],
+			"sid": 729426076184571
 		}
 	],
 	"sid": 203021414522544

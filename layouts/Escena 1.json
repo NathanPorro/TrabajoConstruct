@@ -280,6 +280,34 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BarraDeProgreso",
+					"properties": {
+						"value": 0,
+						"maximum": 100,
+						"tooltip": "",
+						"initially-visible": true,
+						"id": "",
+						"class": ""
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 516.7626953125,
+						"y": 46.97042465209961,
+						"width": 200,
+						"height": 25,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 280785808220687,
