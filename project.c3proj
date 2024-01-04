@@ -21,6 +21,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Barra de progreso",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Arrastrar y soltar",
@@ -38,7 +45,12 @@
 			"cable3",
 			"colisioncable2",
 			"colisioncable3",
-			"start"
+			"Sprite2",
+			"Texto",
+			"ubicacion_1",
+			"ubicacion_2",
+			"ubicacion_3",
+			"BarraDeProgreso"
 		],
 		"subfolders": []
 	},

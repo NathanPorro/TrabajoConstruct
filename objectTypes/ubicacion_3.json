@@ -1,36 +1,30 @@
 {
-	"name": "colisioncable1",
+	"name": "ubicacion_3",
 	"plugin-id": "Sprite",
-	"sid": 465914728004721,
+	"sid": 270649077367714,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "DragnDrop",
-			"name": "ArrastrarYSoltar",
-			"sid": 611816323842503
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 7,
-						"height": 6,
-						"originX": 0.42857142857142855,
-						"originY": 0.8333333333333334,
+						"width": 14,
+						"height": 14,
+						"originX": 0.5714285714285714,
+						"originY": 0.7142857142857143,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1950085,
+						"imageSpriteId": 2857966,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 385726324305171,
+				"sid": 931907257889072,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
