@@ -3,6 +3,7 @@
 	"events": [
 		{
 			"eventType": "block",
+<<<<<<< Updated upstream
 			"conditions": [
 				{
 					"id": "on-drag-start",
@@ -22,6 +23,8 @@
 		},
 		{
 			"eventType": "block",
+=======
+>>>>>>> Stashed changes
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
@@ -124,6 +127,7 @@
 		},
 		{
 			"eventType": "block",
+<<<<<<< Updated upstream
 			"conditions": [],
 			"actions": [
 				{
@@ -137,6 +141,63 @@
 				}
 			],
 			"sid": 498422527137330
+=======
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Texto",
+					"sid": 429254802294142,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Texto",
+					"sid": 307156498137993
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 140253191980813,
+					"parameters": {
+						"object-to-create": "cable1",
+						"layer": "0",
+						"x": "ubicacion_1.X",
+						"y": "ubicacion_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 825638013265077,
+					"parameters": {
+						"object-to-create": "cable2",
+						"layer": "0",
+						"x": "ubicacion_2.X",
+						"y": "ubicacion_2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 827263103444220,
+					"parameters": {
+						"object-to-create": "cable3",
+						"layer": "0",
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 626215381401085
+>>>>>>> Stashed changes
 		}
 	],
 	"sid": 203021414522544
