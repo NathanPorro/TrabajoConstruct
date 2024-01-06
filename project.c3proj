@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -40,17 +47,34 @@
 		"items": [
 			"1Pantalla",
 			"cable1",
-			"colisioncable1",
+			"colisioncable1NV1",
 			"cable2",
 			"cable3",
-			"colisioncable2",
-			"colisioncable3",
-			"Sprite2",
+			"colisioncable2NV1",
+			"colisioncable3NV1",
+			"cable4",
 			"Texto",
 			"ubicacion_1",
 			"ubicacion_2",
 			"ubicacion_3",
-			"BarraDeProgreso"
+			"BarraDeProgreso1",
+			"cable1conectado",
+			"cable2conectado2",
+			"cable3conectado3",
+			"ubicacionConsolas_1",
+			"Sprite",
+			"ubicacion_4",
+			"ubicacion_5",
+			"cable5",
+			"cable4conectado4",
+			"colisioncable4",
+			"colisioncable5",
+			"cable5conectado5",
+			"Botón",
+			"Botón2",
+			"Botón3",
+			"ubicacionBarra",
+			"Sprite2"
 		],
 		"subfolders": []
 	},

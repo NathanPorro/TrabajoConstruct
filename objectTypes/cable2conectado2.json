@@ -1,7 +1,7 @@
 {
-	"name": "Sprite2",
+	"name": "cable2conectado2",
 	"plugin-id": "Sprite",
-	"sid": 452318040864424,
+	"sid": 915530315309650,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 36,
-						"height": 36,
+						"width": 34,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8906437,
+						"imageSpriteId": 8267928,
 						"collisionPoly": {
 							"points": [
 								0.3055555555555556,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 795981668946182,
+				"sid": 791193591833970,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,14 +1,14 @@
 {
-	"name": "colisioncable3",
+	"name": "colisioncable2NV1",
 	"plugin-id": "Sprite",
-	"sid": 596901996303306,
+	"sid": 642851119220580,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "ArrastrarYSoltar",
-			"sid": 889709496093928
+			"sid": 946598003717767
 		}
 	],
 	"effectTypes": [],
@@ -24,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 189220,
+						"imageSpriteId": 2309713,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 254421727671336,
+				"sid": 558468822316306,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
