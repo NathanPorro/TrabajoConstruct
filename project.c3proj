@@ -22,13 +22,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Texto",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "progressbar",
 			"name": "Barra de progreso",
 			"author": "Scirra",
@@ -53,7 +46,6 @@
 			"colisioncable2",
 			"colisioncable3",
 			"cable4",
-			"Texto",
 			"ubicacion_1",
 			"ubicacion_2",
 			"ubicacion_3",
@@ -75,7 +67,8 @@
 			"colisioncable6_1",
 			"colisioncable6_2",
 			"colisioncable6_3",
-			"pared"
+			"pared",
+			"Start"
 		],
 		"subfolders": []
 	},

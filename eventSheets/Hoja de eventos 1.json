@@ -6,16 +6,16 @@
 			"conditions": [
 				{
 					"id": "on-drag-start",
-					"objectClass": "Texto",
-					"sid": 535409885238221,
+					"objectClass": "Start",
+					"sid": 903900483229242,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Texto",
-					"sid": 177687830652753
+					"objectClass": "Start",
+					"sid": 719362250673447
 				},
 				{
 					"id": "create-object",
@@ -59,12 +59,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 646724979785713,
+					"sid": 369886231198572,
 					"parameters": {
 						"object-to-create": "Sprite2",
 						"layer": "0",
-						"x": "0",
-						"y": "0",
+						"x": "1800",
+						"y": "100",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -261,7 +261,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "cable3",
-					"sid": 380277765550509,
+					"sid": 869850698585728,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
@@ -273,6 +273,14 @@
 					"sid": 671232061611418,
 					"parameters": {
 						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 485705918626915,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				},
 				{
