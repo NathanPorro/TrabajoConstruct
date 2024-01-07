@@ -77,7 +77,10 @@
 			"Sprite2",
 			"3pantalla",
 			"cable6",
-			"cable6conectado6"
+			"cable6conectado6",
+			"colisioncable6_1",
+			"colisioncable6_2",
+			"colisioncable6_3"
 		],
 		"subfolders": []
 	},

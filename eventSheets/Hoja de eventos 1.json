@@ -323,6 +323,48 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable6",
+					"sid": 759279065172930,
+					"parameters": {
+						"object": "colisioncable6_1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 828763010776184,
+					"parameters": {
+						"object-to-create": "cable6conectado6",
+						"layer": "0",
+						"x": "colisioncable6_1.X",
+						"y": "colisioncable6_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable6",
+					"sid": 104708596739590
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 232444551722599,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 578711167647661
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-clicked",
 					"objectClass": "Botón",
 					"sid": 465987162171640
@@ -523,6 +565,14 @@
 						"x": "2pantalla.PolyPointXAt(4)",
 						"y": "2pantalla.PolyPointYAt(4)"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 332696483384428,
+					"parameters": {
+						"text": "\"Siguiente\""
+					}
 				}
 			],
 			"sid": 729426076184571
@@ -583,6 +633,11 @@
 					"id": "destroy",
 					"objectClass": "cable5conectado5",
 					"sid": 312882024798634
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Botón2",
+					"sid": 429888611941405
 				},
 				{
 					"id": "create-object",
@@ -648,19 +703,67 @@
 				{
 					"id": "set-position",
 					"objectClass": "colisioncable4",
-					"sid": 479024512448492,
+					"sid": 279040465659889,
 					"parameters": {
-						"x": "3pantalla.PolyPointXAt(1)",
-						"y": "3pantalla.PolyPointYAt(1)"
+						"x": "3pantalla.PolyPointXAt(3)",
+						"y": "3pantalla.PolyPointYAt(3)"
 					}
 				},
 				{
 					"id": "set-position",
 					"objectClass": "colisioncable5",
-					"sid": 329439529299836,
+					"sid": 135050711833506,
 					"parameters": {
-						"x": "3pantalla.PolyPointXAt(3)",
-						"y": "3pantalla.PolyPointYAt(3)"
+						"x": "3pantalla.PolyPointXAt(2)",
+						"y": "3pantalla.PolyPointYAt(2)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_1",
+					"sid": 566880535962260,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(6)",
+						"y": "3pantalla.PolyPointYAt(6)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_2",
+					"sid": 511446934256390,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(4)",
+						"y": "3pantalla.PolyPointYAt(4)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_1",
+					"sid": 567959091053847,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(5)",
+						"y": "3pantalla.PolyPointYAt(5)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 521013944863914,
+					"parameters": {
+						"text": "\"Siguiente\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 478932422680505,
+					"parameters": {
+						"object-to-create": "cable6",
+						"layer": "0",
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				}
 			],

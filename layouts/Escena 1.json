@@ -295,7 +295,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 516.7626953125,
+						"x": 505.2921070257273,
 						"y": 46.97042465209961,
 						"width": 200,
 						"height": 25,
@@ -472,7 +472,7 @@
 					"type": "Botón",
 					"properties": {
 						"type": "button",
-						"text": "OK",
+						"text": "Siguiente",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -485,8 +485,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 582.9412011790026,
-						"y": 87.55806187428402,
+						"x": 567.9412011116844,
+						"y": 93.73453249023856,
 						"width": 72,
 						"height": 24,
 						"originX": 0,
@@ -529,7 +529,7 @@
 					}
 				},
 				{
-					"type": "cable6conectado6",
+					"type": "colisioncable6_1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -539,19 +539,26 @@
 					},
 					"uid": 18,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 610.3515014648438,
-						"y": 238.44021606445312,
-						"width": 46,
-						"height": 21,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 226.52951049804688,
+						"y": 309.9105224609375,
+						"width": 7,
+						"height": 6.882352945136404,
+						"originX": 0.42857142857142855,
+						"originY": 0.8333333333333334,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
