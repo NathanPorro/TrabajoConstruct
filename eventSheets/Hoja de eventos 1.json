@@ -97,6 +97,14 @@
 					"parameters": {
 						"value": "1+BarraDeProgreso.Progress"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable1",
+					"sid": 730315724972642,
+					"parameters": {
+						"frame-number": "2"
+					}
 				}
 			],
 			"sid": 681661549093991
@@ -139,6 +147,14 @@
 					"parameters": {
 						"value": "1+BarraDeProgreso.Progress"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable2",
+					"sid": 266301671410777,
+					"parameters": {
+						"frame-number": "2"
+					}
 				}
 			],
 			"sid": 705884852998770
@@ -180,6 +196,14 @@
 					"sid": 144322256713822,
 					"parameters": {
 						"value": "1+BarraDeProgreso.Progress"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable3",
+					"sid": 850306249590511,
+					"parameters": {
+						"frame-number": "2"
 					}
 				}
 			],
