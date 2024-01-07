@@ -67,7 +67,11 @@
 			"colisioncable6_2",
 			"colisioncable6_3",
 			"pared",
-			"Start"
+			"Start",
+			"FondoIntro",
+			"FondoLv1",
+			"FondoLv2",
+			"FondoLv3"
 		],
 		"subfolders": []
 	},

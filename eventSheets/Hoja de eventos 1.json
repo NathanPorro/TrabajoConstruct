@@ -82,6 +82,11 @@
 						"x": "1Pantalla.PolyPointXAt(3)",
 						"y": "1Pantalla.PolyPointYAt(3)"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoIntro",
+					"sid": 447114603884456
 				}
 			],
 			"sid": 725303347649027
@@ -727,6 +732,11 @@
 					"parameters": {
 						"text": "\"Siguiente\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoLv1",
+					"sid": 341588034489206
 				}
 			],
 			"sid": 729426076184571
@@ -927,6 +937,11 @@
 					"parameters": {
 						"text": "\"Siguiente\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoLv2",
+					"sid": 148278963557490
 				}
 			],
 			"sid": 937219741350451
