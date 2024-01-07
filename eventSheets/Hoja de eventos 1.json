@@ -57,27 +57,6 @@
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 369886231198572,
-					"parameters": {
-						"object-to-create": "Sprite2",
-						"layer": "0",
-						"x": "1800",
-						"y": "100",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 527131411078270,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
 					"id": "set-position",
 					"objectClass": "colisioncable1",
 					"sid": 839324664169999,
@@ -273,14 +252,6 @@
 					"sid": 671232061611418,
 					"parameters": {
 						"frame-number": "2"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 485705918626915,
-					"parameters": {
-						"visibility": "invisible"
 					}
 				},
 				{
@@ -970,16 +941,7 @@
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 959841702621880,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 394738684214128
 		},
 		{
@@ -992,16 +954,7 @@
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 371686639609644,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 539233456983063
 		},
 		{
