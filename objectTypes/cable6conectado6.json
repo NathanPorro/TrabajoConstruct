@@ -1,0 +1,58 @@
+{
+	"name": "cable6conectado6",
+	"plugin-id": "Sprite",
+	"sid": 292598743663529,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6777336,
+						"collisionPoly": {
+							"points": [
+								0.043478260869565216,
+								0.047619047619047616,
+								0.9565217391304348,
+								0.047619047619047616,
+								0.9782608695652174,
+								0.09523809523809523,
+								0.9782608695652174,
+								0.9047619047619048,
+								0.9565217391304348,
+								0.9523809523809523,
+								0.043478260869565216,
+								0.9523809523809523,
+								0.021739130434782608,
+								0.9047619047619048,
+								0.021739130434782608,
+								0.09523809523809523
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 511880280111828,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

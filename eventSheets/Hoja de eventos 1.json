@@ -397,7 +397,7 @@
 					"objectClass": "System",
 					"sid": 330396744508700,
 					"parameters": {
-						"object-to-create": "Sprite",
+						"object-to-create": "2pantalla",
 						"layer": "0",
 						"x": "ubicacionConsolas_1.X",
 						"y": "ubicacionConsolas_1.Y",
@@ -484,8 +484,8 @@
 					"objectClass": "colisioncable4",
 					"sid": 314206964572823,
 					"parameters": {
-						"x": "Sprite.PolyPointXAt(1)",
-						"y": "Sprite.PolyPointYAt(1)"
+						"x": "2pantalla.PolyPointXAt(1)",
+						"y": "2pantalla.PolyPointYAt(1)"
 					}
 				},
 				{
@@ -493,8 +493,8 @@
 					"objectClass": "colisioncable2NV1",
 					"sid": 261139405273638,
 					"parameters": {
-						"x": "Sprite.PolyPointXAt(2)",
-						"y": "Sprite.PolyPointYAt(2)"
+						"x": "2pantalla.PolyPointXAt(2)",
+						"y": "2pantalla.PolyPointYAt(2)"
 					}
 				},
 				{
@@ -502,8 +502,8 @@
 					"objectClass": "colisioncable5",
 					"sid": 516812911894283,
 					"parameters": {
-						"x": "Sprite.PolyPointXAt(3)",
-						"y": "Sprite.PolyPointYAt(3)"
+						"x": "2pantalla.PolyPointXAt(3)",
+						"y": "2pantalla.PolyPointYAt(3)"
 					}
 				},
 				{
@@ -511,8 +511,8 @@
 					"objectClass": "colisioncable1NV1",
 					"sid": 377621068522167,
 					"parameters": {
-						"x": "Sprite.PolyPointXAt(5)",
-						"y": "Sprite.PolyPointYAt(5)"
+						"x": "2pantalla.PolyPointXAt(5)",
+						"y": "2pantalla.PolyPointYAt(5)"
 					}
 				},
 				{
@@ -520,8 +520,8 @@
 					"objectClass": "colisioncable3NV1",
 					"sid": 850292761007609,
 					"parameters": {
-						"x": "Sprite.PolyPointXAt(4)",
-						"y": "Sprite.PolyPointYAt(4)"
+						"x": "2pantalla.PolyPointXAt(4)",
+						"y": "2pantalla.PolyPointYAt(4)"
 					}
 				}
 			],
@@ -556,7 +556,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Sprite",
+					"objectClass": "2pantalla",
 					"sid": 470802396541384
 				},
 				{
@@ -587,6 +587,45 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+					"sid": 805190740890689,
+					"parameters": {
+						"object-to-create": "3pantalla",
+						"layer": "0",
+						"x": "ubicacionConsolas_1.X",
+						"y": "ubicacionConsolas_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 772290180762854,
+					"parameters": {
+						"object-to-create": "cable4",
+						"layer": "0",
+						"x": "ubicacion_4.X",
+						"y": "ubicacion_4.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 695510385669000,
+					"parameters": {
+						"object-to-create": "cable5",
+						"layer": "0",
+						"x": "ubicacion_5.X",
+						"y": "ubicacion_5.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
 					"sid": 467714505349716,
 					"parameters": {
 						"object-to-create": "Botón3",
@@ -604,6 +643,24 @@
 					"parameters": {
 						"width": "Botón2.Width",
 						"height": "Botón2.Height"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable4",
+					"sid": 479024512448492,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(1)",
+						"y": "3pantalla.PolyPointYAt(1)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable5",
+					"sid": 329439529299836,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(3)",
+						"y": "3pantalla.PolyPointYAt(3)"
 					}
 				}
 			],

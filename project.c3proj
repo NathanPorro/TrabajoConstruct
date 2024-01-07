@@ -62,7 +62,7 @@
 			"cable2conectado2",
 			"cable3conectado3",
 			"ubicacionConsolas_1",
-			"Sprite",
+			"2pantalla",
 			"ubicacion_4",
 			"ubicacion_5",
 			"cable5",
@@ -74,7 +74,10 @@
 			"Botón2",
 			"Botón3",
 			"ubicacionBarra",
-			"Sprite2"
+			"Sprite2",
+			"3pantalla",
+			"cable6",
+			"cable6conectado6"
 		],
 		"subfolders": []
 	},
