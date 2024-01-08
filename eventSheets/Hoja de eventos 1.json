@@ -87,6 +87,14 @@
 					"id": "destroy",
 					"objectClass": "FondoIntro",
 					"sid": 447114603884456
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LeyendaDeCables",
+					"sid": 465957734885182,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 725303347649027

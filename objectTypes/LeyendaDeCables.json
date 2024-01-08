@@ -1,0 +1,54 @@
+{
+	"name": "LeyendaDeCables",
+	"plugin-id": "Sprite",
+	"sid": 949034532351933,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 465,
+						"height": 460,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5682643,
+						"collisionPoly": {
+							"points": [
+								0.9849462365591398,
+								0.030434782608695653,
+								0.9763440860215054,
+								0.8826086956521739,
+								0.896774193548387,
+								0.9826086956521739,
+								0.07956989247311828,
+								0.9934782608695653,
+								0.012903225806451613,
+								0.9391304347826087,
+								0.04086021505376344,
+								0.015217391304347827
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 637773099438897,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
