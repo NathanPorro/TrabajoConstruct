@@ -6,16 +6,16 @@
 			"conditions": [
 				{
 					"id": "on-drag-start",
-					"objectClass": "Texto",
-					"sid": 535409885238221,
+					"objectClass": "Start",
+					"sid": 903900483229242,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Texto",
-					"sid": 177687830652753
+					"objectClass": "Start",
+					"sid": 719362250673447
 				},
 				{
 					"id": "create-object",
@@ -55,9 +55,78 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable1",
+					"sid": 839324664169999,
+					"parameters": {
+						"x": "1Pantalla.PolyPointXAt(2)",
+						"y": "1Pantalla.PolyPointYAt(2)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable2",
+					"sid": 408941995714914,
+					"parameters": {
+						"x": "1Pantalla.PolyPointXAt(1)",
+						"y": "1Pantalla.PolyPointYAt(1)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable3",
+					"sid": 762956442468802,
+					"parameters": {
+						"x": "1Pantalla.PolyPointXAt(3)",
+						"y": "1Pantalla.PolyPointYAt(3)"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoIntro",
+					"sid": 447114603884456
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LeyendaDeCables",
+					"sid": 465957734885182,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 725303347649027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 770183287694055
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 260816292929930,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 940764982509763,
+					"parameters": {
+						"maximum": "3"
+					}
+				}
+			],
+			"sid": 958044524230701
 		},
 		{
 			"eventType": "block",
@@ -73,29 +142,37 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cable1",
-					"sid": 806877247535043,
+					"sid": 909561363285568,
 					"parameters": {
-						"object": "colisioncable1",
-						"image-point-optional": "0"
+						"x": "colisioncable1.X",
+						"y": "colisioncable1.Y"
 					}
 				},
 				{
 					"id": "set-enabled",
 					"objectClass": "cable1",
-					"sid": 920997464863654,
+					"sid": 739989640966504,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "BarraDeProgreso",
-					"sid": 212298327801289,
+					"id": "set-animation-frame",
+					"objectClass": "cable1",
+					"sid": 244444316885172,
 					"parameters": {
-						"value": "1+BarraDeProgreso.Progress"
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 566205067463731,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
 					}
 				},
 				{
@@ -115,7 +192,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "cable2",
-					"sid": 926506889529270,
+					"sid": 670067632741823,
 					"parameters": {
 						"object": "colisioncable2"
 					}
@@ -123,29 +200,37 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cable2",
-					"sid": 273038387226462,
+					"sid": 507505440310402,
 					"parameters": {
-						"object": "colisioncable2",
-						"image-point-optional": "0"
+						"x": "colisioncable2.X",
+						"y": "colisioncable2.Y"
 					}
 				},
 				{
 					"id": "set-enabled",
 					"objectClass": "cable2",
-					"sid": 898852406800614,
+					"sid": 696092586250730,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "BarraDeProgreso",
-					"sid": 663416589125150,
+					"id": "set-animation-frame",
+					"objectClass": "cable2",
+					"sid": 517167196229641,
 					"parameters": {
-						"value": "1+BarraDeProgreso.Progress"
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 817357033426167,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
 					}
 				},
 				{
@@ -157,7 +242,7 @@
 					}
 				}
 			],
-			"sid": 705884852998770
+			"sid": 982207092430184
 		},
 		{
 			"eventType": "block",
@@ -165,7 +250,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "cable3",
-					"sid": 235193156023495,
+					"sid": 524019896118187,
 					"parameters": {
 						"object": "colisioncable3"
 					}
@@ -173,29 +258,37 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cable3",
-					"sid": 615893669786595,
+					"sid": 555842763577561,
 					"parameters": {
-						"object": "colisioncable3",
-						"image-point-optional": "0"
+						"x": "colisioncable3.X",
+						"y": "colisioncable3.Y"
 					}
 				},
 				{
 					"id": "set-enabled",
 					"objectClass": "cable3",
-					"sid": 780794247237771,
+					"sid": 869850698585728,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "BarraDeProgreso",
-					"sid": 144322256713822,
+					"id": "set-animation-frame",
+					"objectClass": "cable3",
+					"sid": 671232061611418,
 					"parameters": {
-						"value": "1+BarraDeProgreso.Progress"
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 210327812249908,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
 					}
 				},
 				{
@@ -207,43 +300,319 @@
 					}
 				}
 			],
-			"sid": 399348457856530
+			"sid": 224439171636911
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-created",
-					"objectClass": "BarraDeProgreso",
-					"sid": 512979996034123
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable4",
+					"sid": 958971573960551,
+					"parameters": {
+						"object": "colisioncable4"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-progress",
-					"objectClass": "BarraDeProgreso",
-					"sid": 833191536561967,
+					"id": "set-position",
+					"objectClass": "cable4",
+					"sid": 368834570686881,
 					"parameters": {
-						"value": "0"
+						"x": "colisioncable4.X",
+						"y": "colisioncable4.Y"
 					}
 				},
 				{
-					"id": "set-maximum",
-					"objectClass": "BarraDeProgreso",
-					"sid": 994642780419375,
+					"id": "set-enabled",
+					"objectClass": "cable4",
+					"sid": 795456752376340,
+					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
-						"maximum": "3"
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable4",
+					"sid": 931900340937478,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 961099869351566,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
 					}
 				}
 			],
-			"sid": 681566685501067
+			"sid": 410079362547733
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable5",
+					"sid": 100674701226049,
+					"parameters": {
+						"object": "colisioncable5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable5",
+					"sid": 838824747893872,
+					"parameters": {
+						"x": "colisioncable5.X",
+						"y": "colisioncable5.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable5",
+					"sid": 108060436151802,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable5",
+					"sid": 652921277356203,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 741525158985570,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 442219045373418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable6",
+					"sid": 480301414701679,
+					"parameters": {
+						"object": "colisioncable6_1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable6",
+					"sid": 256910447123248,
+					"parameters": {
+						"x": "colisioncable6_1.X",
+						"y": "colisioncable6_1.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable6",
+					"sid": 670265771015616,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable6",
+					"sid": 656608974513310,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 611579057495120,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 492429919797789
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable6",
+					"sid": 684442831850719,
+					"parameters": {
+						"object": "colisioncable6_2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable6",
+					"sid": 205040141992812,
+					"parameters": {
+						"x": "colisioncable6_2.X",
+						"y": "colisioncable6_2.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable6",
+					"sid": 492044158368984,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable6",
+					"sid": 640001927042518,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 994631723287220,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 201927538720802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable6",
+					"sid": 607310083053936,
+					"parameters": {
+						"object": "colisioncable6_3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable6",
+					"sid": 382425722441237,
+					"parameters": {
+						"x": "colisioncable6_3.X",
+						"y": "colisioncable6_3.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable6",
+					"sid": 979928250659499,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable6",
+					"sid": 391910518359475,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 152849363857461,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 553844519246950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable7",
+					"sid": 740300352005049,
+					"parameters": {
+						"object": "colisioncable7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable7",
+					"sid": 606171022739892,
+					"parameters": {
+						"x": "colisioncable7.X",
+						"y": "colisioncable7.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable7",
+					"sid": 274857412196629,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable7",
+					"sid": 963242826777981,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 791287525171251,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 733293135986308
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 465987162171640
+				},
+				{
 					"id": "compare-progress",
-					"objectClass": "BarraDeProgreso",
+					"objectClass": "BarraDeProgreso1",
 					"sid": 365634802792860,
 					"parameters": {
 						"comparison": 0,
@@ -253,6 +622,22 @@
 			],
 			"actions": [
 				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 767849651448559,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 482852330805514,
+					"parameters": {
+						"maximum": "5"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "1Pantalla",
 					"sid": 129239801072480
@@ -260,28 +645,626 @@
 				{
 					"id": "destroy",
 					"objectClass": "cable1",
-					"sid": 916098346954513
+					"sid": 765717012694118
 				},
 				{
 					"id": "destroy",
 					"objectClass": "cable2",
-					"sid": 383977543764654
+					"sid": 870155520226566
 				},
 				{
 					"id": "destroy",
 					"objectClass": "cable3",
-					"sid": 524277851316830
+					"sid": 553046831869737
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "BarraDeProgreso",
-					"sid": 973073399375575,
+					"id": "destroy",
+					"objectClass": "Botón",
+					"sid": 687842825094778
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 246163058111790,
 					"parameters": {
-						"value": "0"
+						"object-to-create": "Botón2",
+						"layer": "0",
+						"x": "Botón.X",
+						"y": "Botón.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 330396744508700,
+					"parameters": {
+						"object-to-create": "2pantalla",
+						"layer": "0",
+						"x": "ubicacionConsolas_1.X",
+						"y": "ubicacionConsolas_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 211520183925243,
+					"parameters": {
+						"object-to-create": "cable1",
+						"layer": "0",
+						"x": "ubicacion_1.X",
+						"y": "ubicacion_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 457196528518451,
+					"parameters": {
+						"object-to-create": "cable2",
+						"layer": "0",
+						"x": "ubicacion_2.X",
+						"y": "ubicacion_2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 726689093622218,
+					"parameters": {
+						"object-to-create": "cable3",
+						"layer": "0",
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 919551853827793,
+					"parameters": {
+						"object-to-create": "cable4",
+						"layer": "0",
+						"x": "ubicacion_4.X",
+						"y": "ubicacion_4.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 209105621817492,
+					"parameters": {
+						"object-to-create": "cable5",
+						"layer": "0",
+						"x": "ubicacion_5.X",
+						"y": "ubicacion_5.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Botón2",
+					"sid": 409332565236559,
+					"parameters": {
+						"width": "Botón.Width",
+						"height": "Botón.Height"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable4",
+					"sid": 314206964572823,
+					"parameters": {
+						"x": "2pantalla.PolyPointXAt(1)",
+						"y": "2pantalla.PolyPointYAt(1)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable2",
+					"sid": 261139405273638,
+					"parameters": {
+						"x": "2pantalla.PolyPointXAt(2)",
+						"y": "2pantalla.PolyPointYAt(2)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable5",
+					"sid": 516812911894283,
+					"parameters": {
+						"x": "2pantalla.PolyPointXAt(3)",
+						"y": "2pantalla.PolyPointYAt(3)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable1",
+					"sid": 377621068522167,
+					"parameters": {
+						"x": "2pantalla.PolyPointXAt(5)",
+						"y": "2pantalla.PolyPointYAt(5)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable3",
+					"sid": 850292761007609,
+					"parameters": {
+						"x": "2pantalla.PolyPointXAt(4)",
+						"y": "2pantalla.PolyPointYAt(4)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 332696483384428,
+					"parameters": {
+						"text": "\"Siguiente\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoLv1",
+					"sid": 341588034489206
 				}
 			],
 			"sid": 729426076184571
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 774865512103802
+				},
+				{
+					"id": "compare-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 228891240954201,
+					"parameters": {
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 623453944252940,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 717031936072389,
+					"parameters": {
+						"maximum": "4"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "2pantalla",
+					"sid": 470802396541384
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable1",
+					"sid": 524734501533586
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable2",
+					"sid": 226847415609345
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable3",
+					"sid": 529274679735715
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable4",
+					"sid": 993263243906519
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cable5",
+					"sid": 375553018214294
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Botón2",
+					"sid": 429888611941405
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 805190740890689,
+					"parameters": {
+						"object-to-create": "3pantalla",
+						"layer": "0",
+						"x": "ubicacionConsolas_1.X",
+						"y": "ubicacionConsolas_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 772290180762854,
+					"parameters": {
+						"object-to-create": "cable4",
+						"layer": "0",
+						"x": "ubicacion_4.X",
+						"y": "ubicacion_4.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 674659214143244,
+					"parameters": {
+						"object-to-create": "cable5",
+						"layer": "0",
+						"x": "ubicacion_1.X",
+						"y": "ubicacion_1.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 787589462405706,
+					"parameters": {
+						"object-to-create": "cable6",
+						"layer": "0",
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 490395345219216,
+					"parameters": {
+						"object-to-create": "cable7",
+						"layer": "0",
+						"x": "ubicacion_2.X",
+						"y": "ubicacion_2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 467714505349716,
+					"parameters": {
+						"object-to-create": "Botón3",
+						"layer": "0",
+						"x": "Botón2.X",
+						"y": "Botón2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Botón3",
+					"sid": 814876209118222,
+					"parameters": {
+						"width": "Botón2.Width",
+						"height": "Botón2.Height"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable4",
+					"sid": 279040465659889,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(3)",
+						"y": "3pantalla.PolyPointYAt(3)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable5",
+					"sid": 135050711833506,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(2)",
+						"y": "3pantalla.PolyPointYAt(2)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_1",
+					"sid": 566880535962260,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(6)",
+						"y": "3pantalla.PolyPointYAt(6)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_2",
+					"sid": 511446934256390,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(4)",
+						"y": "3pantalla.PolyPointYAt(4)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable6_1",
+					"sid": 567959091053847,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(5)",
+						"y": "3pantalla.PolyPointYAt(5)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "colisioncable7",
+					"sid": 473263468233686,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(1)",
+						"y": "3pantalla.PolyPointYAt(1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 521013944863914,
+					"parameters": {
+						"text": "\"Siguiente\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FondoLv2",
+					"sid": 148278963557490
+				}
+			],
+			"sid": 937219741350451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón3",
+					"sid": 779338899283259
+				},
+				{
+					"id": "compare-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 969576229317948,
+					"parameters": {
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Bien_hecho",
+					"sid": 250023042990154,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 989818263321680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 449348721092921,
+					"parameters": {
+						"object": "cable1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable1",
+					"sid": 165255159494721,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable1",
+					"sid": 427484024352333,
+					"parameters": {
+						"x": "ubicacion_1.X",
+						"y": "ubicacion_1.Y"
+					}
+				}
+			],
+			"sid": 425648422035568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 597754364891337,
+					"parameters": {
+						"object": "cable2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable2",
+					"sid": 553031556166334,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable2",
+					"sid": 357913053432810,
+					"parameters": {
+						"x": "ubicacion_2.X",
+						"y": "ubicacion_2.Y"
+					}
+				}
+			],
+			"sid": 751436043982250
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 680576778674585,
+					"parameters": {
+						"object": "cable3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable3",
+					"sid": 674584956525495,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable3",
+					"sid": 541166270115833,
+					"parameters": {
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y"
+					}
+				}
+			],
+			"sid": 208690572629349
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 449497052554814,
+					"parameters": {
+						"object": "cable4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable4",
+					"sid": 832075480408160,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable4",
+					"sid": 606821086132459,
+					"parameters": {
+						"x": "ubicacion_4.X",
+						"y": "ubicacion_4.Y"
+					}
+				}
+			],
+			"sid": 394102552751371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 758107497169770,
+					"parameters": {
+						"object": "cable5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable5",
+					"sid": 619955449107313,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable5",
+					"sid": 601363496670084,
+					"parameters": {
+						"x": "ubicacion_5.X",
+						"y": "ubicacion_5.Y"
+					}
+				}
+			],
+			"sid": 872176654677464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pared",
+					"sid": 861177910913934,
+					"parameters": {
+						"object": "cable6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "cable6",
+					"sid": 621543243751806,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cable6",
+					"sid": 821715663194043,
+					"parameters": {
+						"x": "ubicacion_3.X",
+						"y": "ubicacion_3.Y"
+					}
+				}
+			],
+			"sid": 107272588812555
 		}
 	],
 	"sid": 203021414522544

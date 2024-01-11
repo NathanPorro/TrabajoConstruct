@@ -1,0 +1,52 @@
+{
+	"name": "2pantalla",
+	"plugin-id": "Sprite",
+	"sid": 989067839404285,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 428,
+						"height": 355,
+						"originX": 0.5186915887850467,
+						"originY": 0.49295774647887325,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1247950,
+						"collisionPoly": {
+							"points": [
+								0.6817757009345797,
+								0.4112676056338027,
+								0.822429906542056,
+								0.14647887323943654,
+								0.7780373831775705,
+								0.38873239436619755,
+								0.12383177570093457,
+								0.5971830985915494,
+								0.5934579439252335,
+								0.40845070422535223
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 373499654030383,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

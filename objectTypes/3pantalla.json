@@ -1,0 +1,54 @@
+{
+	"name": "3pantalla",
+	"plugin-id": "Sprite",
+	"sid": 669312614321643,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 474,
+						"height": 218,
+						"originX": 0.46835443037974683,
+						"originY": 0.3669724770642202,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7021092,
+						"collisionPoly": {
+							"points": [
+								0.7099156118143459,
+								0.6376146788990827,
+								0.5817510548523219,
+								0.743119266055047,
+								0.1236814345991574,
+								0.662844036697247,
+								0.11511075949367211,
+								0.823394495412845,
+								0.7109704641350214,
+								0.7477064220183487,
+								0.7130801687763715,
+								0.855504587155964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 733624548513656,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
