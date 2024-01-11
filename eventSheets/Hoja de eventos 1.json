@@ -898,12 +898,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 695510385669000,
+					"sid": 674659214143244,
 					"parameters": {
 						"object-to-create": "cable5",
 						"layer": "0",
-						"x": "ubicacion_5.X",
-						"y": "ubicacion_5.Y",
+						"x": "ubicacion_1.X",
+						"y": "ubicacion_1.Y",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
