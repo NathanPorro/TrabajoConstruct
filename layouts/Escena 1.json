@@ -164,10 +164,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1008.4406332453826,
-						"y": 272.1363636363636,
-						"width": 323.186,
-						"height": 328.192,
+						"x": 968,
+						"y": 704,
+						"width": 458.86145112824704,
+						"height": 465.96900041673115,
 						"originX": 0.49868073878627966,
 						"originY": 0.5028409090909091,
 						"color": [
@@ -416,8 +416,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1007,
-						"y": 270,
+						"x": 915,
+						"y": 776,
 						"width": 14,
 						"height": 14,
 						"originX": 0.5714285714285714,
@@ -794,12 +794,77 @@
 						}
 					},
 					"world": {
-						"x": 965,
-						"y": 503,
-						"width": 682.4064561744499,
-						"height": 191.073807728846,
+						"x": 967,
+						"y": 675,
+						"width": 273.2957895216344,
+						"height": 76.52282106605763,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "colisioncable7",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1718,
+						"y": 1029,
+						"width": 7,
+						"height": 6,
+						"originX": 0.42857142857142855,
+						"originY": 0.8333333333333334,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bien_hecho",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 876.3575980875859,
+						"y": 528.9439843880094,
+						"width": 462.9093928335178,
+						"height": 279.4137776562675,
+						"originX": 1.027027027027027,
+						"originY": 1.4029850746268657,
 						"color": [
 							1,
 							1,

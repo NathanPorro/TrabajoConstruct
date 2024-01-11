@@ -72,7 +72,11 @@
 			"FondoLv1",
 			"FondoLv2",
 			"FondoLv3",
-			"LeyendaDeCables"
+			"LeyendaDeCables",
+			"cable7",
+			"colisioncable7",
+			"Botón4",
+			"Bien_hecho"
 		],
 		"subfolders": []
 	},

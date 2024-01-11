@@ -1,0 +1,81 @@
+{
+	"name": "cable7",
+	"plugin-id": "Sprite",
+	"sid": 309471669408142,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 350862347032328
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 85,
+						"height": 152,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3193461,
+						"collisionPoly": {
+							"points": [
+								0.21176470588235294,
+								0.006578947368421052,
+								0.8,
+								0.013157894736842105,
+								0.9882352941176471,
+								0.24342105263157895,
+								0.9882352941176471,
+								0.7697368421052632,
+								0.6294117647058827,
+								0.7796052631578949,
+								0.6352941176470588,
+								0.993421052631579,
+								0.36470588235294116,
+								0.993421052631579,
+								0.3647058823529414,
+								0.7763157894736853,
+								0.011764705882352941,
+								0.7697368421052632,
+								0.011764705882352941,
+								0.24342105263157895
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 85,
+						"height": 152,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 328918,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 776739343586926,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

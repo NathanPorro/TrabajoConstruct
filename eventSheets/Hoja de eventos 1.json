@@ -532,6 +532,56 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cable7",
+					"sid": 740300352005049,
+					"parameters": {
+						"object": "colisioncable7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cable7",
+					"sid": 606171022739892,
+					"parameters": {
+						"x": "colisioncable7.X",
+						"y": "colisioncable7.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cable7",
+					"sid": 274857412196629,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cable7",
+					"sid": 963242826777981,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 791287525171251,
+					"parameters": {
+						"value": "1+BarraDeProgreso1.Progress"
+					}
+				}
+			],
+			"sid": 733293135986308
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-clicked",
 					"objectClass": "Botón",
 					"sid": 465987162171640
@@ -874,6 +924,19 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+					"sid": 490395345219216,
+					"parameters": {
+						"object-to-create": "cable7",
+						"layer": "0",
+						"x": "ubicacion_2.X",
+						"y": "ubicacion_2.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
 					"sid": 467714505349716,
 					"parameters": {
 						"object-to-create": "Botón3",
@@ -939,6 +1002,15 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "colisioncable7",
+					"sid": 473263468233686,
+					"parameters": {
+						"x": "3pantalla.PolyPointXAt(1)",
+						"y": "3pantalla.PolyPointYAt(1)"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Botón3",
 					"sid": 521013944863914,
@@ -958,27 +1030,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-drag-start",
-					"objectClass": "cable3",
-					"sid": 417284827337937,
-					"behaviorType": "ArrastrarYSoltar"
-				}
-			],
-			"actions": [],
-			"sid": 394738684214128
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"id": "on-clicked",
+					"objectClass": "Botón3",
+					"sid": 779338899283259
+				},
 				{
-					"id": "on-drop",
-					"objectClass": "cable3",
-					"sid": 112611062319482,
-					"behaviorType": "ArrastrarYSoltar"
+					"id": "compare-progress",
+					"objectClass": "BarraDeProgreso1",
+					"sid": 969576229317948,
+					"parameters": {
+						"comparison": 0,
+						"value": "4"
+					}
 				}
 			],
-			"actions": [],
-			"sid": 539233456983063
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Bien_hecho",
+					"sid": 250023042990154,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 989818263321680
 		},
 		{
 			"eventType": "block",
